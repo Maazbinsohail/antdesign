@@ -1,0 +1,51 @@
+/* flex boxes, grid, positions, z-index, transitions, before, after  */
+/* media quries */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.fixedCol {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.leftCol {
+  left: 0;
+  width: 20%;
+}
+.rightCol {
+  right: 0;
+  width: 20%;
+}
+
+.centeralCol {
+  padding: 10px;
+  margin-left: 16.7%;
+  margin-right: 20%;
+}
+
+@media screen and (max-width: 768px) {
+  .leftCol,
+  .rightCol {
+    display: none;
+  }
+  .centeralCol {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.logo>img {
+  width: 80% !important;
+  /* height: 10%; */
+}
+
+.sidebar{
+  position: sticky;
+  top: 1px ;
+  
+}
+
